@@ -258,8 +258,149 @@ print('jestem poza')
 
 # WYRAŻENIE TRÓJARGUMENTOWE
 # która z liczb jest większa i o ile większa
-
+'''
 A = 8765
 B = 4123
 print('A > B o: ' +str(A-B)) if (A>=B) else print('A < B o: ' +str(B-A))
+'''
 
+
+# Pętla for-in sortowanie w listach
+'''
+lista = [1,2,3,4,5,6,7,8]
+for v in lista:
+    print('wartość: ' +str(v))
+'''
+
+'''
+lista = [1,2,3,4,5,6,7,8]
+for index, var in enumerate(lista):
+    print('index: '+str(index)+'\twartość: '+str(var))
+'''
+
+# for-in słownik, literowanie po kluczach
+'''
+słownik = {'a':1, 'b':2, 'c':3}
+for k in słownik:
+    if(słownik[k] >=2):
+        print(k, słownik[k])
+'''
+
+# range
+'''
+lista = range(10)
+print(lista)
+for i in lista:
+    print(i)
+'''
+
+'''
+for j in range(15,25):
+    print(j)
+'''
+
+'''
+for k in range(0,50,2):
+    print(k, k**2, k+5)
+'''
+
+# formatowanie długości wyjścia z programu
+'''
+
+for k in range(0,50,2):
+    print(k, k**2, k**3)
+'''
+
+# pojedyncze i zastępuje intiger
+'''
+for k in range(0,100):
+    print('wynik: %4i%6i%8i' % (k, k**2, k**3))
+
+for l in range(0, 100):
+    print('pierwiastek kwadratowy z %4i wynosi: %6f.2f' % (l, l**0,5))
+'''
+  
+# 57
+'''
+zam=input("Zamówienie: ")
+sklep_prod = {'nic':1, 'nic2':2, 'nic3':3}
+prod_dost = {1:5, 2:2, 3:7}
+if(zam in sklep_prod.keys()):
+            if(zam == a and prod_dost[sklep_prod[a]] >= zam):
+                        print('dostępne: ' + a)
+                        print('zamawiasz: ' + str(zam_il) + ' szt.')
+            elif(prod_dost[sklep_prod[a]] < zam_il):
+                        print('produkt dostępny: ' + a)
+                        print('dostępne tylko: ') + str(prod_dost(sklep_prod[a]) + ' szt.')
+            else:
+                        print('brak dostępności towaru')
+''' 
+                      
+'''               
+elif(zam == a and prod_dost[sklep_prod[a]] < zam_il):
+
+elif(zam == a and prod_dost[sklep_prod[a]] < zam_il):
+      print('towar dostępny: ' + a)
+      print('dostępne: ' + str(prod_dost[sklep_prod[a]]) + ' szt.')
+else:
+      print('brak towaru, który chcesz zamówić')
+'''
+
+'''
+sklep_prod = {'nic':1, 'nic2':2, 'nic3':3}
+prod_dost = {1:5, 2:2, 3:7}
+prod_cena = {1: 500, 2: 444, 3: 1}
+suma = 0
+i = 't'
+while(i == 't'):
+      zam = input('wybierz towar: ')
+      zam-il = int(input('podaj ilość: '))
+      if (zam in sklep_prod.keys()):
+                  if
+      (zam == a and prod_dost[sklep_prod[a]] >= zam_il):
+                        print('dostępne: ' + a)
+                        print('zamawiasz: ' + str(zam_il) + ' szt.')
+                  elif(prod_dost[sklep_prod[a]] < zam_il):
+                        print('produkt dostępny: ' + a)
+                        print('dostępne 
+'''
+
+
+# P60
+'''
+i='t'
+lista = []
+slownik = {'0':'zero', '1':'jeden', '2':'dwa', '3':'trzy', '4':'cztery', '5':'pięć', '6':'sześć', '7':'siedem', '8':'osiem', '9':'dziewięć'}
+while(i == 't'):
+    cyfra = input("wprowadź cyfrę: ")
+    if(cyfra.isdigit()):
+        lista.append(slownik[cyfra])
+    else:
+        print('wartość nie jest cyfrą')
+    i = input('następna cyfra? t/n ')
+print(lista)
+for i in lista:
+    print(i,'',end="")
+'''
+
+#61
+'''
+a = range(1,11)
+b = 1
+while (b <= 10):
+    print('%3i%3i%3i%3i%3i%3i%3i%3i%3i%3i' % (b*a[0], b*a[1], b*a[2], b*a[3], b*a[4], b*a[5], b*a[6], b*a[7], b*a[8], b*a[9]))
+    b+= 1
+'''
+
+lp = range(1,10,2)
+a = len(lp) -1 # malejąco
+while (a >= 0):
+    print(lp[a])
+    a -= 1
+    
+lp = range(1,10,2)
+a = len(lp) -1 # malejąco
+while (a >= 0):
+    print(lp[a]**2)
+    a -= 1
+    
