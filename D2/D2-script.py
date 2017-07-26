@@ -396,8 +396,8 @@ lp = range(1,10,2)
 a = len(lp) -1 # malejąco
 while (a >= 0):
     print(lp[a])
-    a -= 1
     
+    a -= 1
 lp = range(1,10,2)
 a = len(lp) -1 # malejąco
 while (a >= 0):
