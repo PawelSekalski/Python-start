@@ -156,5 +156,5 @@ while (i != ''):
 so=0
 print('-----------------')
 for i in oceny:
-    so +=1
+    so += i
 print('średnia ocen', round(so/len(oceny),2))
