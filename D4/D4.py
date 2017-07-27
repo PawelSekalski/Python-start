@@ -147,7 +147,7 @@ def spr():
             print(tab)
             return tab
 def wypisz5(limit,lista):
-    print('elementy większe niż 5'+str(limit))
+    print('elementy większe/równe 5', 'z',str(limit),'wskazanych liczb')
     suma = 0
     for v in lista:
         if (v >= limit):
