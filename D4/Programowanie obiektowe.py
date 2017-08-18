@@ -136,19 +136,15 @@ print(zakup1.zaplata())
 print(zakup1.zaplata_calk)
 '''
         # for v in range(1,7): nie potrzebne przy sample
-'''
+
 # symulator Lotto
 class Lotto:
     def __init__(self):
         print(random.sample(range(1,50),6))
 
 los1 = Lotto()
-los2 = Lotto()
-los3 = Lotto()
-los4 = Lotto()
-los5 = Lotto()
-los6 = Lotto()
-'''
+
+
 
 '''
 # Lotto v.2
